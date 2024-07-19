@@ -14,24 +14,26 @@ function getSongContent(slug) {
 
 export const generateStaticParams = async () => {
   const songs = getSongMetadata("content");
+
   return songs.map((song) => ({ slug: song.slug }));
 };
 
 export async function generateMetadata({ params }) {
-  const id = params?.slug ? " ⋅ " + params?.slug : "";
+  const id = params?.slug ? params?.slug : "";
   return {
-    title: `The Bubbly Baker ${id.replaceAll("_", " ")}`,
+    title: `${id.replaceAll("_", " ")}`,
   };
 }
 
 export default function SongPage(props) {
   const slug = props.params.slug;
   const rawSongData = getSongContent(slug);
-  const { content } = rawSongData;
+
+  const { content, data } = rawSongData;
 
   return (
     <>
-      <ChordProParse songData={content} />
+      <ChordProParse songData={content} metadata={data} />
     </>
   );
 }

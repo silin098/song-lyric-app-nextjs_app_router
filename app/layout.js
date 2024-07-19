@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import getSongMetadata from "@/utils/getSongData";
 import Navigation from "../components/Navigation";
+import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} max-w-screen-xl mx-auto`}>
         <Navigation songs={songMedatda} />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

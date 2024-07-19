@@ -1,7 +1,6 @@
 ---
 title: "A Nee Sone luu"
 artist: "wana"
-slug: "a-nee-sone-luu"
 ---
 
 Intro

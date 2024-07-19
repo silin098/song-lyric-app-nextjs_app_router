@@ -9,7 +9,7 @@ export default function Navigation({ songs }) {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="flex my-3 items-center justify-between">
+    <nav className="flex mb-3 items-center justify-between sticky top-0 z-10 bg-white">
       <div className="items-center hidden sm:block ">
         <a href="/" className="mx-10">
           <h1 className="text-3xl">GuitarBook</h1>
@@ -21,11 +21,11 @@ export default function Navigation({ songs }) {
 
         <div className="hidden sm:block">
           <ul className="flex ml-10">
-            <li className="mr-5">
-              <a href="">Tuner</a>
+            <li className="mr-5 hover:bg-gray-200 py-1 px-2 rounded">
+              <a href="/tuner">Tuner</a>
             </li>
-            <li>
-              <a href="">Chords</a>
+            <li className=" hover:bg-gray-200 py-1 px-2 rounded">
+              <a href="/chords">Chords</a>
             </li>
           </ul>
         </div>
