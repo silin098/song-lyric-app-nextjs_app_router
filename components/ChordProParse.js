@@ -41,12 +41,12 @@ export default function ChordProParse({ songData, metadata }) {
           Transpose Down
         </button>
       </div>
-      <div className="mb-5 flex gap-4">
+      <div className="my-3 flex gap-4">
         <div className="font-semibold mb-3">{metadata.title}</div>
         <div className="text-gray-400">- {metadata.artist}</div>
       </div>
 
-      <div dangerouslySetInnerHTML={{ __html: formattedSong }} />
+      <div className="" dangerouslySetInnerHTML={{ __html: formattedSong }} />
     </article>
   );
 }

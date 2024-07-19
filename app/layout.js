@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} max-w-screen-xl mx-auto`}>
         <Navigation songs={songMedatda} />
         <main>{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

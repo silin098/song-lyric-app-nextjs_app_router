@@ -22,10 +22,10 @@ export default function Navigation({ songs }) {
         <div className="hidden sm:block">
           <ul className="flex ml-10">
             <li className="mr-5 hover:bg-gray-200 py-1 px-2 rounded">
-              <a href="/tuner">Tuner</a>
+              <a href="#">Tuner</a>
             </li>
             <li className=" hover:bg-gray-200 py-1 px-2 rounded">
-              <a href="/chords">Chords</a>
+              <a href="#">Chords</a>
             </li>
           </ul>
         </div>
