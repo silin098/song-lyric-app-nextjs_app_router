@@ -78,16 +78,15 @@ export default function SearchBar(props) {
               {searchResults.length > 0 ? (
                 searchResults.map((result) => {
                   return (
-                    <div
-                      onClick={() => handleOnClick(result)}
+                    <Link
+                      href={`/song/${result.slug}`}
                       key={result.slug}
                       className="flex justify-between text-sm mb-2 p-2 cursor-pointer  rounded-sm hover:bg-gray-200"
+                      onClick={() => handleOnClick(result)}
                     >
-                      <Link href={`/song/${result.slug}`}>
-                        <p>{result.title}</p>
-                        <p className="text-gray-400">{result.artist}</p>
-                      </Link>
-                    </div>
+                      <p>{result.title}</p>
+                      <p className="text-gray-400">{result.artist}</p>
+                    </Link>
                   );
                 })
               ) : (

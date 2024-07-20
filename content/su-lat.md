@@ -1,6 +1,6 @@
 ---
 title: "Su Lat"
-artist: "idiot"
+artist: "Idiot"
 ---
 
 [C]ငါဘာကြောင့် [Em]ဘာကြောင့် [F]မတွေးမိခဲ့ [G7]|

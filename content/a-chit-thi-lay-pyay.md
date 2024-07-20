@@ -1,5 +1,5 @@
 ---
-title: "အချစ်သည်လေပြေ"
+title: "A Chit Thi Lay Pyay"
 artist: "ဇော်ဝင်းထွဋ်"
 ---
 
