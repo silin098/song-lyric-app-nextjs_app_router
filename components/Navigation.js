@@ -9,15 +9,15 @@ export default function Navigation({ songs }) {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="flex mb-3 items-center justify-between sticky top-0 z-10 bg-white">
+    <nav className="flex  md:mb-3 my-3  items-center justify-between sticky top-0 z-10 bg-white">
       <div className="items-center hidden sm:block ">
         <a href="/" className="mx-10">
           <h1 className="text-3xl">GuitarBook</h1>
         </a>
       </div>
-      <div className="flex flex-1 items-center ml-10">
+      <div className="flex flex-1 items-center px-3">
+        <IoMdMenu className="sm:hidden block text-4xl mr-3  cursor-pointer" />
         <SearchBar songs={songs} />
-        <IoMdMenu className="sm:hidden block text-4xl ml-5 cursor-pointer" />
 
         <div className="hidden sm:block">
           <ul className="flex ml-10">

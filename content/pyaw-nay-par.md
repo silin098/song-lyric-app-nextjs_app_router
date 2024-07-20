@@ -1,6 +1,6 @@
 ---
-title: "ပျော်နေပါ"
-artist: "ကောင်းကောင်း"
+title: "Pyaw Nay Par"
+artist: "Kaung Kaung"
 ---
 
 Intro

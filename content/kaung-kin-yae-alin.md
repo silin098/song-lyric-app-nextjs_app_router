@@ -1,10 +1,7 @@
 ---
-title: "ကောင်းကင်ရဲ့အလင်း"
+title: "Kaung Kin Yae Alin"
 artist: "ဇော်ဝင်းထွဋ်"
 ---
-
-{title: ကောင်းကင်ရဲ့အလင်း}
-{artist: ဇော်ဝင်းထွဋ်}
 
 Intro
 [D]| [G]| [Gbm]| [A]|

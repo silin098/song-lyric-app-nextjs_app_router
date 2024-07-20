@@ -1,7 +1,7 @@
+"use client";
 import { CiSearch } from "react-icons/ci";
-// import { users } from "@/components/data";
-
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 export default function SearchBar(props) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -12,7 +12,7 @@ export default function SearchBar(props) {
   const { songs } = props;
 
   useEffect(() => {
-    if (searchTerm.trim()) {
+    if (searchTerm) {
       const results = songs.filter(
         (song) =>
           song.title.toLowerCase().includes(searchTerm.trim().toLowerCase()) ||
@@ -24,7 +24,7 @@ export default function SearchBar(props) {
       setSearchResults([]);
       setShowSuggestions(false);
     }
-  }, [songs, searchTerm]);
+  }, [searchTerm, songs]);
 
   function handleChange(e) {
     setSearchTerm(e.target.value);
@@ -36,7 +36,7 @@ export default function SearchBar(props) {
   }
 
   function handleOnClick(result) {
-    setSearchTerm(result.name);
+    setSearchTerm(result.title);
 
     setShowSuggestions(false);
   }
@@ -83,10 +83,10 @@ export default function SearchBar(props) {
                       key={result.slug}
                       className="flex justify-between text-sm mb-2 p-2 cursor-pointer  rounded-sm hover:bg-gray-200"
                     >
-                      <a href={`/song/${result.slug}`} className="">
+                      <Link href={`/song/${result.slug}`}>
                         <p>{result.title}</p>
                         <p className="text-gray-400">{result.artist}</p>
-                      </a>
+                      </Link>
                     </div>
                   );
                 })

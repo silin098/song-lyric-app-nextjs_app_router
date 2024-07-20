@@ -1,5 +1,5 @@
 ---
-title: "အချစ်ရဲ့ရလဒ်"
+title: "A Chit Ye Ya Lat"
 artist: "လင်းလင်း"
 ---
 
