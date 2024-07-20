@@ -16,8 +16,13 @@ export default function Navigation({ songs }) {
         </a>
       </div>
       <div className="flex flex-1 items-center px-3">
-        <IoMdMenu className="sm:hidden block text-4xl mr-3  cursor-pointer" />
+        <div className="sm:block ">
+          <a href="/" className="p-2 font-semibold sm:hidden">
+            Guitar
+          </a>
+        </div>
         <SearchBar songs={songs} />
+        <IoMdMenu className="sm:hidden block text-4xl ml-3  cursor-pointer" />
 
         <div className="hidden sm:block">
           <ul className="flex ml-10">

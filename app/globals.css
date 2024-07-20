@@ -6,3 +6,9 @@
   padding-left: 5px;
   color: brown;
 }
+
+.chord-sheet {
+  width: 500px;
+
+  overflow: hidden;
+}
