@@ -22,7 +22,7 @@ export default function Navigation({ songs }) {
           </a>
         </div>
         <SearchBar songs={songs} />
-        <IoMdMenu className="sm:hidden block text-4xl ml-3  cursor-pointer" />
+        <IoMdMenu className="sm:hidden block text-3xl ml-3  cursor-pointer" />
 
         <div className="hidden sm:block">
           <ul className="flex ml-10">
