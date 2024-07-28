@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tombatossals/chords-db": "^0.5.1",
+    "@tombatossals/react-chords": "^0.2.10",
     "chordsheetjs": "^10.1.0",
     "gray-matter": "^4.0.3",
     "next": "14.2.5",
