@@ -35,7 +35,7 @@ export default function ChordProParse({ songData, metadata }) {
 
   return (
     <div className="px-4 md:p-0 ">
-      <div className="flex gap-2 py-2 text-sm justify-center  sm:justify-start">
+      <div className="flex gap-2 py-2 text-sm   sm:justify-start">
         <button
           onClick={transposeUp}
           className="bg-gray-200 p-3 rounded hover:bg-gray-300"
