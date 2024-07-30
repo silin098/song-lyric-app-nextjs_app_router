@@ -1,30 +1,26 @@
 "use client";
-import { IoMdMenu } from "react-icons/io";
-import { useState } from "react";
+
 import SearchBar from "./SearchBar";
-
+import Logo from "../public/logo.svg";
+import Image from "next/image";
 export default function Navigation({ songs }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
-
   return (
-    <nav className="flex  md:mb-3 my-3  items-center justify-between sticky top-0 z-10 bg-white">
+    <nav className="flex  md:mb-3   items-center justify-between sticky top-0 z-10 bg-white">
       <div className="items-center hidden sm:block ">
         <a href="/" className="mx-10">
-          <h1 className="text-3xl">GuitarBook</h1>
+          <Image src={Logo} alt="guitarist-logo" height={40} />
         </a>
       </div>
-      <div className="flex flex-1 items-center px-3">
-        <div className="sm:block ">
-          <a href="/" className="p-2 font-semibold sm:hidden">
-            Guitar
+      <div className="flex flex-1 items-center">
+        <div className="sm:block p-3">
+          <a href="/" className="font-semibold sm:hidden">
+            <Image src={Logo} alt="guitarist-logo" height={40} />
           </a>
         </div>
         <SearchBar songs={songs} />
-        <IoMdMenu className="sm:hidden block text-3xl ml-3  cursor-pointer" />
+        {/* <IoMdMenu className="sm:hidden block text-3xl ml-3  cursor-pointer" /> */}
 
-        <div className="hidden sm:block">
+        {/* <div className="hidden sm:block">
           <ul className="flex ml-10">
             <li className="mr-5 hover:bg-gray-200 py-1 px-2 rounded">
               <a href="#">Tuner</a>
@@ -33,7 +29,7 @@ export default function Navigation({ songs }) {
               <a href="#">Chords</a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
