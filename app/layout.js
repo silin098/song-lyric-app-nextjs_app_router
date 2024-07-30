@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+
 import "./globals.css";
 import getSongMetadata from "@/utils/getSongData";
 import Navigation from "../components/Navigation";
@@ -6,7 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Guitar Book",
+  title: "Guitarist Chord",
   description: "A chord book where you can play song anywhere",
 };
 
