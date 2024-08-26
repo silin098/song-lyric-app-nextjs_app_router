@@ -56,7 +56,7 @@ export default function SearchBar(props) {
     <>
       <div className="w-5/6">
         <div
-          className="flex items-center  px-2 py-1 border border-gray-400 rounded-md shadow relative"
+          className="flex items-center  px-2 py-1 border rounded-md shadow relative focus-within:outline outline-gray-500 outline-2"
           ref={searchRef}
         >
           <CiSearch size="1.3rem" />
@@ -73,7 +73,7 @@ export default function SearchBar(props) {
 
           {showSuggestions && (
             <div
-              className={`absolute top-12 left-0 w-full border border-gray-400 p-2 rounded-sm overflow-y-auto bg-white shadow `}
+              className={`absolute top-12 left-0 w-full border border-gray-400 p-2 rounded-sm overflow-y-auto bg-white shadow  `}
             >
               {searchResults.length > 0 ? (
                 searchResults.map((result) => {
