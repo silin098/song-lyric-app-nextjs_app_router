@@ -58,16 +58,6 @@ export default function ChordProParse({ songData, metadata }) {
           className="overflow-hidden min-w-80"
           dangerouslySetInnerHTML={{ __html: formattedSong }}
         />
-        <div className="sm:flex sm:max-w-lg sm:flex-wrap hidden ">
-          {filteredChord.map((chord, index) => {
-            return (
-              <div key={index} className="w-40">
-                <p className="text-center">{chord}</p>
-                <ChordChart chordText={chord} />
-              </div>
-            );
-          })}
-        </div>
       </div>
     </div>
   );
